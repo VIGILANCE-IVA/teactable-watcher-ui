@@ -72,7 +72,7 @@ const SettingsPage = () => {
       <BlockTitle>SCHEDULE</BlockTitle>
       <List noHairlinesMd>
         <ListItem>
-          <span>Auto Start</span>
+          <span>Auto start</span>
           <Toggle
             defaultChecked={cfg.cron?.run}
             onChange={(e) =>
