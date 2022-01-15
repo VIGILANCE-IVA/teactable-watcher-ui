@@ -71,6 +71,18 @@ const SettingsPage = () => {
       </List>
       <BlockTitle>SCHEDULE</BlockTitle>
       <List noHairlinesMd>
+        <ListItem>
+          <span>Auto Start</span>
+          <Toggle
+            defaultChecked={cfg.cron?.run}
+            onChange={(e) =>
+              setState(
+                "cron",
+                xtend(cfg.cron, data.cron, { run: e.target.checked })
+              )
+            }
+          />
+        </ListItem>
         <ListInput
           label="Timezone"
           type="text"
@@ -107,7 +119,7 @@ const SettingsPage = () => {
           <Toggle
             defaultChecked={cfg.sms_notifications}
             onChange={(e) => setState("sms_notifications", e.target.checked)}
-          ></Toggle>
+          />
         </ListItem>
         <ListInput
           label="Phone"
