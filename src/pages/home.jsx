@@ -40,7 +40,7 @@ const HomePage = ({ f7router }) => {
       store.dispatch("setAnomalies", data);
     });
 
-    // socket.on("predictions", console.log);
+    socket.on("predictions", console.log);
   }, []);
 
   const getAnomalies = () => {
