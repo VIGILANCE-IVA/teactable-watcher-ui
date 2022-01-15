@@ -22,7 +22,7 @@ export default {
             BASE_URL: "http://localhost:8080",
           }
         : {
-            BASE_URL: "https://appname.cloud.koodeyo.com",
+            BASE_URL: "http://watcher-api.cloud.koodeyo.com",
           }
     ),
   },
